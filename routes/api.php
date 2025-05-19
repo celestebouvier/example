@@ -16,4 +16,5 @@ Route::controller(RegisterController::class)->group(function(){
 
 Route::middleware('auth:sanctum')->group( function () {
     Route::resource('products', ProductController::class);
+     Route::apiResource('localidades', LocalidadController::class);
 });
